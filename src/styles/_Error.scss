@@ -1,0 +1,47 @@
+.error {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: $colorprimary;
+  &__title {
+    font-size: 12rem;
+    font-weight: 700;
+  }
+  &__message {
+    margin-top: 3rem;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  &__link {
+    font-size: 0.75rem;
+    text-decoration: underline;
+    margin-top: 7rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .error {
+    &__title {
+      font-size: 8rem;
+    }
+    &__message {
+      margin-top: 0.5rem;
+      font-size: 1rem;
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .error {
+    &__title {
+      font-size: 4rem;
+    }
+    &__message {
+      font-size: 0.75rem;
+    }
+    &__link {
+      font-size: 0.5rem;
+    }
+  }
+}

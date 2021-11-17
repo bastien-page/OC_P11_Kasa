@@ -1,11 +1,13 @@
 import "./styles/main.scss";
-import Footer from "./components/Footer";
+// import Footer from "./components/Footer";
+import Error from "./components/Error";
 
 function App() {
   return (
     <div className="App">
       Hello
-      <Footer />
+      <Error />
+      {/* <Footer /> */}
     </div>
   );
 }
