@@ -1,0 +1,35 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 0;
+  color: $colorprimary;
+  ul {
+    display: flex;
+    li {
+      padding-left: 20px;
+    }
+  }
+}
+
+.active {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 850px) {
+  header {
+    img {
+      width: 145px;
+    }
+    a {
+      font-size: 0.75rem;
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  header a {
+    text-transform: capitalize;
+    font-size: 0.5rem;
+  }
+}
