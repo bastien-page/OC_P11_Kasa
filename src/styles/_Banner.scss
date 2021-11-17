@@ -1,0 +1,52 @@
+.banner {
+  position: relative;
+  margin: 0 auto;
+  background: no-repeat url("../medias/banner.png");
+  border-radius: 25px;
+  height: 225px;
+  max-width: 1240px;
+  &__bg {
+    height: 225px;
+    max-width: 1240px;
+    background: black;
+    opacity: 0.3;
+    border-radius: 25px;
+  }
+  &__message {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    max-width: 1240px;
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .banner {
+    height: 180px;
+    &__bg {
+      height: 180px;
+    }
+    &__message {
+      font-size: 1.5rem;
+      text-align: left;
+      padding-left: 1rem;
+      overflow-wrap: break-word;
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .banner {
+    height: 110px;
+    &__bg {
+      height: 110px;
+    }
+    &__message {
+      font-size: 1rem;
+    }
+  }
+}

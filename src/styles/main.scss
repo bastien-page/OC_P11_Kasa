@@ -5,3 +5,20 @@
 @import "Footer";
 @import "Error";
 @import "Header";
+@import "Banner";
+
+body {
+  margin: 20px 100px;
+}
+
+@media screen and (max-width: 850px) {
+  body {
+    margin: 20px 60px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    margin: 20px;
+  }
+}
