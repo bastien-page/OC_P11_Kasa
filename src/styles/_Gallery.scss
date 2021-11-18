@@ -1,0 +1,17 @@
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  background-color: $colorsecondary;
+  padding: 50px;
+  border-radius: 25px;
+  margin: 2rem auto;
+}
+
+@media screen and (max-width: 550px) {
+  .gallery {
+    background-color: inherit;
+    padding: 0px;
+  }
+}
