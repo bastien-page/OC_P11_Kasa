@@ -3,6 +3,9 @@ import ReactDOM from "react-dom";
 import "./styles/main.scss";
 import Home from "./pages/Home";
 import reportWebVitals from "./reportWebVitals";
+import NotFound from "./pages/NotFound";
+import About from "./pages/About";
+import Header from "./components/Header";
 
 ReactDOM.render(
   <React.StrictMode>

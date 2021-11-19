@@ -8,7 +8,7 @@ export class About extends Component {
     return (
       <div>
         <Header />
-        <Banner />
+        <Banner page="about" />
         <Footer />
       </div>
     );
