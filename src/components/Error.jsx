@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 class Error extends Component {
   render() {
@@ -8,7 +9,9 @@ class Error extends Component {
         <p className="error__message">
           Oups! La page que vous demandez n'existe pas.
         </p>
-        <p className="error__link">Retourner sur la page d’accueil</p>
+        <Link to="/" className="error__link">
+          Retourner sur la page d’accueil
+        </Link>
       </div>
     );
   }

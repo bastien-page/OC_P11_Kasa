@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import logo from "../medias/logoRed.png";
+import { Link } from "react-router-dom";
 
 class Header extends Component {
   render() {
@@ -9,10 +10,10 @@ class Header extends Component {
         <nav>
           <ul>
             <li>
-              <a href="/">Accueil</a>
+              <Link to="/">Accueil</Link>
             </li>
             <li>
-              <a href="/">A propos</a>
+              <Link to="/about">A propos</Link>
             </li>
           </ul>
         </nav>

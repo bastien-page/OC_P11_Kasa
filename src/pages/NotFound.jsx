@@ -6,7 +6,7 @@ export class NotFound extends Component {
   render() {
     return (
       <div>
-        {/* <Header /> */}
+        <Header />
         <Error />
       </div>
     );

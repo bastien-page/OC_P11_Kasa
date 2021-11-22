@@ -5,12 +5,16 @@ import Home from "./pages/Home";
 import reportWebVitals from "./reportWebVitals";
 import NotFound from "./pages/NotFound";
 import About from "./pages/About";
-import Header from "./components/Header";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 ReactDOM.render(
-  <React.StrictMode>
-    <Home />
-  </React.StrictMode>,
+  <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="about" element={<About />} />
+      <Route path="*" element={<NotFound />} />
+    </Routes>
+  </BrowserRouter>,
   document.getElementById("root")
 );
 
