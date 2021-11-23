@@ -1,0 +1,42 @@
+.collapseHouseBloc {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menuhome {
+  display: flex;
+  justify-content: space-between;
+  color: $colorprimary;
+  &__title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  &__location,
+  &__name {
+    font-size: 0.75rem;
+  }
+  &__tags {
+    display: flex;
+    margin-top: 20px;
+  }
+  &__tag {
+    margin-right: 10px;
+    background-color: $colorprimary;
+    color: white;
+    width: 115px;
+    height: 25px;
+    border-radius: 10px;
+    font-size: 0.5rem;
+    line-height: 25px;
+    text-align: center;
+  }
+  &__pp {
+    margin-left: 10px;
+    width: 64px;
+    border-radius: 50%;
+  }
+  &__host {
+    display: flex;
+    align-items: center;
+  }
+}

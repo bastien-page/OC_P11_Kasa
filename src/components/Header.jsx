@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import logo from "../medias/logoRed.png";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 class Header extends Component {
   render() {
@@ -10,10 +10,14 @@ class Header extends Component {
         <nav>
           <ul>
             <li>
-              <Link to="/">Accueil</Link>
+              <NavLink className="link" to="/">
+                Accueil
+              </NavLink>
             </li>
             <li>
-              <Link to="/about">A propos</Link>
+              <NavLink className="link" to="/about">
+                A propos
+              </NavLink>
             </li>
           </ul>
         </nav>

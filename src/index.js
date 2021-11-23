@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import reportWebVitals from "./reportWebVitals";
 import NotFound from "./pages/NotFound";
 import About from "./pages/About";
+import House from "./pages/House";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 ReactDOM.render(
@@ -12,6 +13,7 @@ ReactDOM.render(
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="about" element={<About />} />
+      <Route path="house/*" element={<House />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   </BrowserRouter>,

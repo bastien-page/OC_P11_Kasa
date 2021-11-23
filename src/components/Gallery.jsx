@@ -5,11 +5,17 @@ import data from "../logements.json";
 export class Gallery extends Component {
   render() {
     const dataHome = data;
+    console.log(dataHome);
 
     return (
       <div className="gallery">
         {dataHome.map((home) => (
-          <Card key={home.id} img={home.cover} title={home.title} />
+          <Card
+            key={home.id}
+            id={home.id}
+            img={home.cover}
+            title={home.title}
+          />
         ))}
       </div>
     );
