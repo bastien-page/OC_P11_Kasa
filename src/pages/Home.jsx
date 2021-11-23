@@ -11,6 +11,7 @@ export class Home extends Component {
     return (
       <div>
         <Header />
+        <Banner page="home" />
         <Gallery />
         <Footer />
       </div>

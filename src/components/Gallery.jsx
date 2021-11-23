@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Card from "./Card";
+import data from "../dataAbout.json";
 
 export class Gallery extends Component {
   render() {

@@ -1,17 +1,25 @@
 import React, { Component } from "react";
-import data from "../dataAbout.json";
 
 export class Collapse extends Component {
+  constructor(props) {
+    super(props);
+    this.toggleCollapse = this.toggleCollapse.bind(this);
+    this.state = { selector: "collapse__text" };
+  }
+
+  toggleCollapse() {
+    this.setState = { selector: "collapse__text" };
+  }
+
   render() {
-    console.log({ data });
     return (
       <div className="collapse">
         <div className="collapse__title">
-          test
+          {this.props.title}
           <button
             className="collapse__icon"
             onClick={() => {
-              console.log("click");
+              this.toggleCollapse();
             }}
           >
             <svg
@@ -28,14 +36,7 @@ export class Collapse extends Component {
             </svg>
           </button>
         </div>
-        <p className="collapse__text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
-          perspiciatis magni dolores ut impedit assumenda. Soluta harum vel,
-          nulla laboriosam quia rem eius facere dignissimos temporibus fugiat
-          voluptatem dicta non? s fugiat laboriosam, officiis, illo, accusantium
-          minima nam impedit sed earum dolorum sunt aliquid deleniti nulla.
-          Autem similique ut eius in reiciendis veniam pariatur?
-        </p>
+        <p className={this.state.selector}>{this.props.text}</p>
       </div>
     );
   }
