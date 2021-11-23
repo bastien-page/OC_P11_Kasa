@@ -1,15 +1,16 @@
 import React, { Component } from "react";
 import Card from "./Card";
-import data from "../dataAbout.json";
+import data from "../logements.json";
 
 export class Gallery extends Component {
   render() {
+    const dataHome = data;
+
     return (
       <div className="gallery">
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+        {dataHome.map((home) => (
+          <Card key={home.id} img={home.cover} title={home.title} />
+        ))}
       </div>
     );
   }

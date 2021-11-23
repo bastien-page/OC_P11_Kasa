@@ -15,7 +15,7 @@ export class About extends Component {
         <Banner page="about" />
         <div className="collapseBloc">
           {dataAbout.map((menu) => (
-            <Collapse title={menu.title} text={menu.text} />
+            <Collapse key={menu.title} title={menu.title} text={menu.text} />
           ))}
         </div>
 
