@@ -6,6 +6,7 @@ export class Card extends Component {
     return (
       <div className="card">
         <Link to={"/house/" + this.props.id}>
+          <div className="card__bg"></div>
           <img className="card__img" src={this.props.img} alt="logement" />
           <p className="card__text">{this.props.title}</p>
         </Link>
