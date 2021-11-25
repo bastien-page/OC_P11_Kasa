@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Header from "../components/Header";
 import Carrousel from "../components/Carrousel";
-import MenuHome from "../components/MenuHome";
+import MenuHouse from "../components/MenuHouse";
 import Collapse from "../components/Collapse";
 import Footer from "../components/Footer";
 
@@ -17,8 +17,8 @@ export class House extends Component {
     return (
       <div>
         <Header />
-        <Carrousel />
-        <MenuHome
+        <Carrousel pictures={home.pictures} />
+        <MenuHouse
           title={home.title}
           location={home.location}
           tags={home.tags}

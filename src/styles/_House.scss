@@ -1,6 +1,11 @@
 .collapseHouseBloc {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 60px;
   justify-content: space-between;
+  div {
+    width: 100%;
+  }
 }
 
 .menuhome {

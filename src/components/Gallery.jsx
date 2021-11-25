@@ -5,7 +5,6 @@ import data from "../logements.json";
 export class Gallery extends Component {
   render() {
     const dataHome = data;
-    console.log(dataHome);
 
     return (
       <div className="gallery">
