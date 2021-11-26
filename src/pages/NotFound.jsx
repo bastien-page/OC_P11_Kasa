@@ -5,10 +5,10 @@ import Error from "../components/Error";
 export class NotFound extends Component {
   render() {
     return (
-      <div>
+      <>
         <Header />
         <Error />
-      </div>
+      </>
     );
   }
 }

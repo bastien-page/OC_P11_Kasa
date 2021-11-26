@@ -20,7 +20,7 @@
   }
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: $breakpad) {
   .error {
     &__title {
       font-size: 8rem;
@@ -32,7 +32,7 @@
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: $breakphone) {
   .error {
     &__title {
       font-size: 4rem;

@@ -10,7 +10,7 @@ export class About extends Component {
     const dataAbout = data;
 
     return (
-      <div>
+      <>
         <Header />
         <Banner page="about" />
         <div className="collapseBloc">
@@ -20,7 +20,7 @@ export class About extends Component {
         </div>
 
         <Footer />
-      </div>
+      </>
     );
   }
 }

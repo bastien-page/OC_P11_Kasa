@@ -15,7 +15,7 @@ export class House extends Component {
     const home = dataHouse.find((elt) => elt.id === id);
 
     return (
-      <div>
+      <>
         <Header />
         <Carrousel pictures={home.pictures} />
         <MenuHouse
@@ -30,7 +30,7 @@ export class House extends Component {
           <Collapse text={home.equipments} title="Équipements" />
         </div>
         <Footer />
-      </div>
+      </>
     );
   }
 }

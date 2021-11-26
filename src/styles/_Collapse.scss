@@ -37,7 +37,27 @@
   margin: 3rem auto;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: $breakpad) {
+  .collapse {
+    &__title {
+      font-size: 0.8rem;
+      padding: 0.5rem 0.8rem;
+    }
+    &__text {
+      font-size: 0.8rem;
+      padding: 0.8rem;
+    }
+    &__list {
+      font-size: 0.8rem;
+    }
+    &__icon {
+      width: 15px;
+      height: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: $breakphone) {
   .collapse {
     &__title {
       font-size: 0.5rem;
