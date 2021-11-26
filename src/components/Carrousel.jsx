@@ -1,7 +1,22 @@
 import React, { Component } from "react";
 
 export class Carrousel extends Component {
-  translate() {}
+  constructor() {
+    super();
+    this.state = { index: 0 };
+  }
+
+  next() {
+    this.state.index === this.props.pictures.length - 1
+      ? this.setState({ index: 0 })
+      : this.setState({ index: this.state.index + 1 });
+  }
+
+  prev() {
+    this.state.index === 0
+      ? this.setState({ index: this.props.pictures.length - 1 })
+      : this.setState({ index: this.state.index - 1 });
+  }
 
   addImg() {
     return (
@@ -19,11 +34,14 @@ export class Carrousel extends Component {
   addImgWithChevron() {
     return (
       <div className="carrousel">
-        {this.props.pictures.map((picture) => (
-          <img className="carrousel__img" src={picture} alt="" key={picture} />
-        ))}
+        <img
+          className="carrousel__img"
+          src={this.props.pictures[this.state.index]}
+          alt=""
+        />
 
         <svg
+          onClick={() => this.prev()}
           className="carrousel__left"
           width="48"
           height="80"
@@ -37,6 +55,7 @@ export class Carrousel extends Component {
           />
         </svg>
         <svg
+          onClick={() => this.next()}
           className="carrousel__right"
           width="48"
           height="80"
