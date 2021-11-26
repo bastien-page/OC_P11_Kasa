@@ -4,7 +4,6 @@ export class Collapse extends Component {
   constructor() {
     super();
 
-    // Initial state
     this.state = { open: false, icon: false };
   }
 
@@ -13,6 +12,23 @@ export class Collapse extends Component {
       open: !this.state.open,
       icon: !this.state.icon,
     });
+  }
+
+  createText() {
+    const element = this.props.text;
+    if (typeof element === "string") {
+      return element;
+    } else {
+      return (
+        <ul>
+          {element.map((elt) => (
+            <li className="collapse__list" key={elt}>
+              {elt}
+            </li>
+          ))}
+        </ul>
+      );
+    }
   }
 
   render() {
@@ -41,7 +57,7 @@ export class Collapse extends Component {
           </svg>
         </div>
         <p className={"collapse__text" + (this.state.open ? "" : " hidden")}>
-          {this.props.text}
+          {this.createText()}
         </p>
       </div>
     );

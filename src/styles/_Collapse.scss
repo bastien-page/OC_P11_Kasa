@@ -20,6 +20,9 @@
     color: $colorprimary;
     padding: 1rem;
   }
+  &__list {
+    font-weight: 400;
+  }
 }
 
 .hidden {
@@ -43,6 +46,9 @@
     &__text {
       font-size: 0.5rem;
       padding: 0.5rem;
+    }
+    &__list {
+      font-size: 0.5rem;
     }
     &__icon {
       width: 9px;
