@@ -14,9 +14,10 @@ export class Star extends Component {
 
   render() {
     return (
-      <div>
+      <>
         {this.calcStar().map((rating) => (
           <svg
+            key="id"
             width="30"
             height="30"
             viewBox="0 0 30 30"
@@ -29,7 +30,7 @@ export class Star extends Component {
             />
           </svg>
         ))}
-      </div>
+      </>
     );
   }
 }

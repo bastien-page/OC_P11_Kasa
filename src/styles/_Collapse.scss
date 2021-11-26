@@ -33,3 +33,20 @@
 .collapseBloc {
   margin: 3rem auto;
 }
+
+@media screen and (max-width: 375px) {
+  .collapse {
+    &__title {
+      font-size: 0.5rem;
+      padding: 0.3rem 0.5rem;
+    }
+    &__text {
+      font-size: 0.5rem;
+      padding: 0.5rem;
+    }
+    &__icon {
+      width: 9px;
+      height: 15px;
+    }
+  }
+}

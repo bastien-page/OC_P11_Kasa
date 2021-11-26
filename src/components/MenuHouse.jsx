@@ -19,9 +19,12 @@ export class MenuHouse extends Component {
             ))}
           </div>
         </div>
-        <div>
+        <div className="menuhome__profil">
           <div className="menuhome__host">
-            <p className="menuhome__name"> {this.props.host.name} </p>
+            <p className="menuhome__name">
+              {this.props.host.name.split(" ")[0]} <br />
+              {this.props.host.name.split(" ")[1]}
+            </p>
             <img
               className="menuhome__pp"
               src={this.props.host.picture}
