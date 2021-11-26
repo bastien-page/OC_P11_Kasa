@@ -56,9 +56,9 @@ export class Collapse extends Component {
             />
           </svg>
         </div>
-        <p className={"collapse__text" + (this.state.open ? "" : " hidden")}>
+        <div className={"collapse__text" + (this.state.open ? "" : " hidden")}>
           {this.createText()}
-        </p>
+        </div>
       </div>
     );
   }
