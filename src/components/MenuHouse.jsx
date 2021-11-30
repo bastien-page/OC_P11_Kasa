@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import Star from "./Star";
+import Rating from "./Rating";
 
 export class MenuHouse extends Component {
   render() {
@@ -32,7 +32,7 @@ export class MenuHouse extends Component {
             />
           </div>
           <div className="menuhome__rating">
-            <Star rating={this.props.rating} />
+            <Rating rating={this.props.rating} />
           </div>
         </div>
       </div>
