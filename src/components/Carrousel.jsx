@@ -7,13 +7,13 @@ export class Carrousel extends Component {
   }
 
   next() {
-    this.state.index === this.props.pictures.length - 1
+    this.state.index === this.props.pictures.length - 1 // If end of array, index is 0, else index ++
       ? this.setState({ index: 0 })
       : this.setState({ index: this.state.index + 1 });
   }
 
   prev() {
-    this.state.index === 0
+    this.state.index === 0 // If start of array, index is end of array, else index --
       ? this.setState({ index: this.props.pictures.length - 1 })
       : this.setState({ index: this.state.index - 1 });
   }
@@ -73,6 +73,7 @@ export class Carrousel extends Component {
   }
 
   render() {
+    // If only 1 Img, return Img, else return Img with Chevron
     return this.props.pictures.length > 1
       ? this.addImgWithChevron()
       : this.addImg();

@@ -4,6 +4,8 @@ import bannerAbout from "../medias/bannerAbout.png";
 
 class Banner extends Component {
   render() {
+    // Return Img & Text following page in Props
+
     return this.props.page === "home" ? (
       <div className="banner">
         <img src={bannerHome} alt="bannière" />

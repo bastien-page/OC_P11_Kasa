@@ -17,6 +17,7 @@ export class Collapse extends Component {
   createText() {
     const element = this.props.text;
     if (typeof element === "string") {
+      // If text create element P else return UL and LI
       return element;
     } else {
       return (

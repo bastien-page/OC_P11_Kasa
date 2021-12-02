@@ -16,10 +16,7 @@ export class House extends Component {
 
     const home = dataHouse.find((elt) => elt.id === id);
 
-    /*
-    Si on ne trouve pas l'id dans les données on affiche l'Error 
-    */
-
+    // If home is undefined (ID is false or not in data), redirect to Error Page
     return home === undefined ? (
       <NotFound />
     ) : (

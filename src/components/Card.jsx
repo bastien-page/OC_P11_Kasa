@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 
 export class Card extends Component {
   render() {
+    // Return Img and Title following Props
+
     return (
       <div className="card">
         <Link to={"/house/" + this.props.id}>
