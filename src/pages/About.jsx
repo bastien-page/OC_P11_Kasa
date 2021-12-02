@@ -18,7 +18,6 @@ export class About extends Component {
             <Collapse key={menu.title} title={menu.title} text={menu.text} />
           ))}
         </div>
-
         <Footer />
       </>
     );
