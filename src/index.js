@@ -11,10 +11,10 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 ReactDOM.render(
   <BrowserRouter>
     <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="about" element={<About />} />
-      <Route path="house/:id" element={<House />} />
-      <Route path="*" element={<NotFound />} />
+      <Route path="/OC_P11_Kasa/" element={<Home />} />
+      <Route path="OC_P11_Kasa/about" element={<About />} />
+      <Route path="OC_P11_Kasa/house/:id" element={<House />} />
+      <Route path="OC_P11_Kasa/*" element={<NotFound />} />
     </Routes>
   </BrowserRouter>,
   document.getElementById("root")
