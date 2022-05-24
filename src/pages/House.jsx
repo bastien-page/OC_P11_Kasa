@@ -12,7 +12,7 @@ export class House extends Component {
   render() {
     const dataHouse = data;
 
-    const id = window.location.pathname.substr(7);
+    const id = window.location.pathname.substr(19);
 
     const home = dataHouse.find((elt) => elt.id === id);
 
