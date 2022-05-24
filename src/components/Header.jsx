@@ -10,12 +10,12 @@ class Header extends Component {
         <nav>
           <ul>
             <li>
-              <NavLink className="link" to="/">
+              <NavLink className="link" to="/OC_P11_Kasa/">
                 Accueil
               </NavLink>
             </li>
             <li>
-              <NavLink className="link" to="/about">
+              <NavLink className="link" to="/OC_P11_Kasa/about">
                 A propos
               </NavLink>
             </li>
